@@ -1,0 +1,40 @@
+{
+  "name": "tadhana",
+  "version": "1.0.0",
+  "description": "This is a website where you can shou out everything you ever wanted!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/museyoucoulduse/tadhana.git"
+  },
+  "keywords": [
+    "shout",
+    "anger",
+    "love",
+    "problems",
+    "issues",
+    "plus",
+    "minus",
+    "positive",
+    "negative",
+    "feelings",
+    "scream",
+    "read",
+    "stories",
+    "rumors",
+    "gossips"
+  ],
+  "author": "Simon Blaszczynski",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/museyoucoulduse/tadhana/issues"
+  },
+  "homepage": "https://github.com/museyoucoulduse/tadhana#readme",
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0"
+  }
+}
