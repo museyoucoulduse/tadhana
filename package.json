@@ -1,8 +1,14 @@
 {
   "name": "tadhana",
+<<<<<<< 438a71fa5157f925da0c66f5cded447969b85d4c
   "version": "0.0.1",
   "description": "This is a website where you can shou out everything you ever wanted!",
   "main": "tadhana/backend/index.js",
+=======
+  "version": "1.0.0",
+  "description": "This is a website where you can shout out everything you ever wanted!",
+  "main": "index.js",
+>>>>>>> Stop updating major versions.
   "scripts": {
     "test": "mocha -R spec"
   },
@@ -36,9 +42,9 @@
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "mocha": "^3.0.2",
-    "morgan": "^1.7.0",
-    "sexjs": "^1.0.0",
-    "should": "^11.1.0"
+    "mocha": "~3.0.2",
+    "morgan": "~1.7.0",
+    "sexjs": "~1.0.0",
+    "should": "~11.1.0"
   }
 }
