@@ -1,0 +1,55 @@
+{
+    "name": "tadhana"
+    , "description": "This is a website where you can shout out everything you ever wanted!"
+    , "main": "index.js"
+    , "authors": [
+    "Simon Blaszczynski"
+  ]
+    , "license": "AGPL-3.0"
+    , "keywords": [
+    "shout"
+    , "anger"
+    , "love"
+    , "problems"
+    , "issues"
+    , "plus"
+    , "minus"
+    , "positive"
+    , "negative"
+    , "feelings"
+    , "scream"
+    , "read"
+    , "stories"
+    , "rumors"
+    , "gossips"
+  ]
+    , "homepage": "https://github.com/museyoucoulduse/tadhana"
+    , "ignore": [
+    "**/.*"
+    , "node_modules"
+    , "bower_components"
+    , "test"
+    , "tests"
+  ]
+    , "dependencies": {
+        "bootstrap": "^4.0.0-alpha.4"
+        , "angular": "1.5.8"
+        , "font-awesome": "^4.6.3"
+    }
+    , "overrides": {
+        "bootstrap": {
+            "main": [
+                "dist/js/bootstrap.min.js"
+                , "scss/bootstrap.scss"
+                , "dist/css/bootstrap.min.css"
+            ]
+        }
+        , "font-awesome": {
+            "main": [
+                "less/font-awesome.less"
+                , "scss/font-awesome.scss"
+                , "css/font-awesome.min.css"
+            ]
+        }
+    }
+}

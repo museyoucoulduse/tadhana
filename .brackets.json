@@ -1,0 +1,14 @@
+{
+    "jscodehints.detectedExclusions": [
+        "/home/simon/github/tadhana/tadhana/public/lib/jquery/src/css/showHide.js",
+        "/home/simon/github/tadhana/public/lib/jquery/src/attributes/support.js",
+        "/home/simon/github/tadhana/public/lib/jquery/src/attributes/prop.js",
+        "/home/simon/github/tadhana/public/lib/jquery/src/var/class2type.js",
+        "morgan.js",
+        "/home/simon/github/tadhana/backend/router.js",
+        "/home/simon/github/tadhana/public/lib/jquery/src/core/access.js",
+        "/home/simon/github/tadhana/public/lib/tether/examples/dolls/dolls.js",
+        "/home/simon/github/tadhana/public/lib/tether/src/js/constraint.js",
+        "/home/simon/github/tadhana/public/lib/tether/src/js/utils.js"
+    ]
+}

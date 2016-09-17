@@ -8,6 +8,13 @@ app.use(morgan('dev'));
 app.use(express.static(__dirname + '/../public/'));
 app.use('/story', storyRouter);
 
-app.listen(process.env.PORT, process.env.IP, function () {
-    console.log(`Server ${sex.neuter} is running at http://${process.env.IP}:${process.env.PORT}`);
+var port = process.env.PORT || 3000;
+var hostname = process.env.IP || 'localhost';
+
+app.listen(port, hostname, function (err) {
+    if (err) {
+        console.log(err.message);
+        process.exit(1);
+    }
+    console.log(`Server ${sex.neuter} is running at http://${hostname}:${port}`);
 });

@@ -1,16 +1,11 @@
 {
   "name": "tadhana",
-<<<<<<< 438a71fa5157f925da0c66f5cded447969b85d4c
-  "version": "0.0.1",
-  "description": "This is a website where you can shou out everything you ever wanted!",
-  "main": "tadhana/backend/index.js",
-=======
   "version": "1.0.0",
   "description": "This is a website where you can shout out everything you ever wanted!",
   "main": "index.js",
->>>>>>> Stop updating major versions.
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "start": "node tadhana/backend/index"
   },
   "repository": {
     "type": "git",
@@ -46,5 +41,13 @@
     "morgan": "~1.7.0",
     "sexjs": "~1.0.0",
     "should": "~11.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jscs": "^4.0.0",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.3",
+    "jshint-stylish": "^2.2.1",
+    "wiredep": "^4.0.0"
   }
 }
