@@ -10,6 +10,8 @@
         "/home/simon/github/tadhana/public/lib/tether/examples/dolls/dolls.js",
         "/home/simon/github/tadhana/public/lib/tether/src/js/constraint.js",
         "/home/simon/github/tadhana/public/lib/tether/src/js/utils.js",
-        "/home/simon/github/tadhana/public/lib/angular/angular.min.js"
+        "/home/simon/github/tadhana/public/lib/angular/angular.min.js",
+        "/home/simon/github/tadhana/public/lib/jquery/src/css/adjustCSS.js",
+        "/home/simon/github/tadhana/tadhana/public/lib/jquery/src/event/trigger.js"
     ]
 }

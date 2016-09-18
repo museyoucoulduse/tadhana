@@ -1,0 +1,38 @@
+doctype html
+html(ng-app='JinAndJang')
+    head
+        meta(charset="utf-8")
+        //- bower:css
+        link(rel='stylesheet', href='../..//lib/bootstrap/dist/css/bootstrap.min.css')
+        link(rel='stylesheet', href='../..//lib/font-awesome/css/font-awesome.min.css')
+        //- endbower
+        //- inject:css
+        //- endinject
+        //- bower:js
+        script(src='../..//lib/jquery/dist/jquery.js')
+        script(src='../..//lib/tether/dist/js/tether.js')
+        script(src='../..//lib/bootstrap/dist/js/bootstrap.min.js')
+        script(src='../..//lib/angular/angular.js')
+        //- endbower
+        //- inject:js
+        script(src="/js/app.js")
+        //- endinject
+        title Tadhana | Lots of Lulz
+    body(ng-controller="StoryCtrl as story")
+        h1 Yo! Brothers and sisters, we all have something to say, something positive, sometimes negative, but we hold the stories inside our minds. It's time to free up this words and memories. This place is called Tadhana.
+        div
+            input(type="text", ng-model="story.newTitle", placeholder="Title")
+            br
+            input(type="text", ng-model="story.newName", placeholder="Author")
+            br
+            input(type="email", ng-model="story.newEmail", placeholder="Your email (optional)")
+            br
+            br
+            textarea(cols="80", rows="20", ng-model="story.newStory", placeholder="Long time ago, in a far, far away area with the internet...")
+            br
+            input(type="submit", ng-click="story.addStory()")
+        div(ng-repeat="story in story.stories")
+            h3 {{story.title}}
+            h4 {{story.author}}
+            p {{story.story}}
+        

@@ -7,6 +7,11 @@ var app = express();
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/../public/'));
 app.use('/story', storyRouter);
+app.set('views', './frontend/views/');
+app.set('view engine', 'jade');
+app.get('/', function(req, res) {
+    res.render('index', {list: ['hihi', 'haha', 'buahahaha']});
+});
 var port = process.env.PORT || 3000;
 var hostname = process.env.IP || 'localhost';
 app.listen(port, hostname, function (err) {
