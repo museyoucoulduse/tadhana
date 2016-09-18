@@ -21,6 +21,9 @@ html(ng-app='JinAndJang')
     body(ng-controller="StoryCtrl as story")
         h1 Yo! Brothers and sisters, we all have something to say, something positive, sometimes negative, but we hold the stories inside our minds. It's time to free up this words and memories. This place is called Tadhana.
         div
+            each story in stories
+                h2=story.title
+        div
             input(type="text", ng-model="story.newTitle", placeholder="Title")
             br
             input(type="text", ng-model="story.newName", placeholder="Author")
@@ -35,4 +38,3 @@ html(ng-app='JinAndJang')
             h3 {{story.title}}
             h4 {{story.author}}
             p {{story.story}}
-        
