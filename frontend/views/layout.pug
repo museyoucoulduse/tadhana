@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    <!--     bower:css-->
+    <link rel="stylesheet" href="../..//lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../..//lib/font-awesome/css/font-awesome.min.css" />
+    <!--     endbower-->
+        //- inject:css
+        //- endinject
+    <!--     bower:js-->
+    <script src="../..//lib/jquery/dist/jquery.js"></script>
+    <script src="../..//lib/tether/dist/js/tether.js"></script>
+    <script src="../..//lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../..//lib/angular/angular.js"></script>
+    <!--     endbower-->
+    //- inject:js
+    script(src="/js/app.js")
+    //- endinject
+    block title
+      title Default title
+body(ng-app='Tadhana')
+    
+    block content

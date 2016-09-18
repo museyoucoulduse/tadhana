@@ -1,32 +1,34 @@
 (function () {
     'use_strict';
-    angular.module("JinAndJang", [])
+    angular.module("Tadhana", [])
 
     .controller("StoryCtrl", StoryCtrl);
 
-        function StoryCtrl () {
-            var story = this;
+    StoryCtrl.$inject = ['$http']
 
-            var stories = [{
-                title: "lol",
-                author: "me",
-                story: "buahahahahahaha"
-            }]
+    function StoryCtrl($http) {
+        var story = this;
 
-//            $scope.story = '';
-//            $scope.title = "Title";
-//            $scope.name = 'Anonymous';
-
-            story.addStory = function () {
-                var newStory = {
-                    title: story.newTitle,
-                    author: story.newName,
-                    story: story.newStory
-                };
-                stories.push(newStory);
-                story.newStory = '';
+        story.addStory = () => {
+            var newStory = {
+                title: story.newTitle,
+                author: story.newName,
+                email: story.newEmail,
+                story: story.newStory
             };
-
-            story.stories = stories;
+            $http.post('/addstory', newStory) // PASS THE DATA AS THE SECOND PARAMETER
+                .success(
+                    function (success) {
+                        console.log(success)
+                    })
+                .error(
+                    function (error) {
+                        console.log(error)
+                    });
+            //                stories.push(newStory);
+            story.newStory = '';
         };
+
+        //            story.stories = stories;
+    };
 })();

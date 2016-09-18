@@ -1,12 +1,12 @@
 'use strict';
 var express = require('express');
 var morgan = require('morgan');
-var storyRouter = require('./router.js');
+var router = require('./router.js');
 var sex = require('sexjs');
 var app = express();
 app.use(morgan('dev'));
 app.use(express.static(__dirname + '/../public/'));
-app.use('/story', router);
+app.use('/', router);
 app.set('views', './frontend/views/');
 app.set('view engine', 'pug');
 
@@ -42,11 +42,11 @@ var stories1 = [
 }
 ]
 
-app.get('/', function (req, res) {
-    res.render('index', {
-        stories: stories1
-    });
-});
+//app.get('/', function (req, res) {
+//    res.render('index', {
+//        stories: stories1
+//    });
+//});
 var port = process.env.PORT || 3000;
 var hostname = process.env.IP || 'localhost';
 app.listen(port, hostname, function (err) {

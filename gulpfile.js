@@ -28,12 +28,12 @@ gulp.task('inject', function () {
     var injectOptions = {
         ignorePath: 'public'
     };
-    return gulp.src('./frontend/views/**/*.jade').pipe(wiredep(options)).pipe(inject(injectSrc, injectOptions)).pipe(gulp.dest('./frontend/views'));
+    return gulp.src('./frontend/views/**/*.pug').pipe(wiredep(options)).pipe(inject(injectSrc, injectOptions)).pipe(gulp.dest('./frontend/views'));
 });
 gulp.task('serve', ['inject'], function () {
     var options = {
         script: 'backend/index.js',
-        delayTime: 0,
+        delayTime: 2,
         //        env: {
         //            'PORT': 3000
         //            , 'IP': 'localhost'
